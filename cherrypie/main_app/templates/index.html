@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en-us">
+{% load static %}
+
+    <head>
+
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <title>TY Night</title>
+        <meta name="description" content="">
+
+        <link rel="icon" href="{% static 'img/phonograph.ico' %}">
+
+        <!-- The compiled CSS file -->
+                <link rel="stylesheet" href="{% static 'css/production.css' %}">
+
+        <link href="{% static 'css/themify-icons.css' %}" rel="stylesheet">
+          <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+
+          <link href='{% static "css/dosis-font.css" %}' rel='stylesheet' type='text/css'>
+
+
+        <!-- Web fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700" rel="stylesheet">
+
+        <!-- favicon.ico. Place these in the root directory. -->
+        <link rel="shortcut icon" href="favicon.ico">
+
+    </head>
+
+    <body>
+
+
+    <!-- Create outer border -->
+    <div class="page-border" id="home">
+    <div class="bg--white">
+    <nav class="side-menu">
+        <ul>
+          <li class="hidden active">
+            <a class="page-scroll" href="#page-top"></a>
+          </li>
+          <li>
+            <a href="#home" class="page-scroll">
+              <span class="menu-title">Home</span>
+              <span class="dot"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#speakers" class="page-scroll">
+              <span class="menu-title">Performers</span>
+              <span class="dot"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#schedule" class="page-scroll">
+              <span class="menu-title">Schedule</span>
+              <span class="dot"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#tickets" class="page-scroll">
+              <span class="menu-title">Tickets</span>
+              <span class="dot"></span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+        <!-- Header -->
+        <header class="align--center pt3 pb2">
+            <div class="container">
+                <h1 class="mb3" title="Huddle">TY NIGHT</h1>
+                <h2 class="mb3">The night everyone has been waiting&nbsp;for.</h2>
+                <p class="mb1">14 May 2020</p>
+                <p>Clonskeagh, Dublin</p>
+            </div>
+        </header>
+
+        <!-- Body -->
+        <main>
+            <div class="container" >
+
+                <!-- Info -->
+                <section class="pt2 pb3">                    
+                    <img class="mb3" src="{% static 'img/virgil2.jpg' %}" alt="Huddle presentation">
+                    <div class="grid-row">
+                    <h1 id='title'>Why this event is super cool?</h1>
+                        <div class="grid-column span-one-third mt1">
+                           <span id="mic" class="ti-microphone"></span>
+
+                           <br>
+                           &nbsp;
+                            <p class="content-ct">Witness the amazing performances and works of&nbsp;our authentic year group.</p>
+                        </div>
+                        <div class="grid-column span-one-third mt1">
+                            <span id="ticket1" class="ti-ticket"></span>
+                                                       <br>
+
+                            &nbsp;
+                            <p class="content-ct">With the event tickets being free,&nbsp;TY Night offers you the event just for your pleasure.</p>
+                        </div>
+                        <div class="grid-column span-one-third mt1">
+                            <span id="ticket2" class="ti-music-alt"></span>
+                            <br>
+
+                            &nbsp;
+                            <p class="content-ct">TY Night offers a relaxed environment with quality music and food.&nbsp;The event? A must</p>
+                        </div>
+                    </div>
+                     
+                </section>
+
+                <!-- Presenters -->
+                <div class="row me-row content-ct speaker" id="speakers">
+          <h2 class="row-title">Meet the Stars</h2>
+          <br>
+          &nbsp;
+          <div class="col-md-4 col-sm-6 feature">
+            <img src="{% static 'img/speaker-1.png' %}" class="speaker-img">
+            <h3>Simon Collins</h3>
+            <p>Simon is designer and partner at Fictivekin and has worked in a variety of situations for bands, record labels, governments, polar explorers, and most other things</p>
+            <ul class="speaker-social">
+              <li><a href="#"><span class="ti-facebook"></span></a></li>
+              <li><a href="#"><span class="ti-twitter-alt"></span></a></li>
+              <li><a href="#"><span class="ti-linkedin"></span></a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-sm-6 feature">
+            <img src="{% static 'img/speaker-2.png' %}" class="speaker-img">
+            <h3>Stephanie Troeth</h3>
+            <p>Stephie is a user experience researcher and designer. In over 15 years of working on the web, she has worn many hats, including a product lead for a tech startup in publishing</p>
+            <ul class="speaker-social">
+              <li><a href="#"><span class="ti-facebook"></span></a></li>
+              <li><a href="#"><span class="ti-twitter-alt"></span></a></li>
+              <li><a href="#"><span class="ti-linkedin"></span></a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-sm-6 feature ">
+            <img src="{% static 'img/speaker-3.png' %}" class="speaker-img">
+            <h3>Harry Roberts</h3>
+            <p>Harry is a freelance designer, developer, writer, speaker and front-end architect from the UK, previously working as Senior UI Developer for Sky. He Tweets at</p>
+            <ul class="speaker-social">
+              <li><a href="#"><span class="ti-facebook"></span></a></li>
+              <li><a href="#"><span class="ti-twitter-alt"></span></a></li>
+              <li><a href="#"><span class="ti-linkedin"></span></a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-sm-6 feature" id="padleft">
+            <img src="{% static 'img/speaker-4.png' %}" class="speaker-img">
+            <h3>Geri Coady</h3>
+            <p>Harry is a freelance designer, developer, writer, speaker and front-end architect from the UK, previously working as Senior UI Developer for Sky. He Tweets at</p>
+            <ul class="speaker-social">
+              <li><a href="#"><span class="ti-facebook"></span></a></li>
+              <li><a href="#"><span class="ti-twitter-alt"></span></a></li>
+              <li><a href="#"><span class="ti-linkedin"></span></a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-sm-6 feature">
+            <img src="{% static 'img/speaker-5.png' %}" class="speaker-img">
+            <h3>Andy Budd</h3>
+            <p>Harry is a freelance designer, developer, writer, speaker and front-end architect from the UK, previously working as Senior UI Developer for Sky. He Tweets at</p>
+            <ul class="speaker-social">
+              <li><a href="#"><span class="ti-facebook"></span></a></li>
+              <li><a href="#"><span class="ti-twitter-alt"></span></a></li>
+              <li><a href="#"><span class="ti-linkedin"></span></a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-sm-6 feature ">
+            <img src="{% static 'img/speaker-6.png' %}" class="speaker-img">
+            <h3>Christian Lauke</h3>
+            <p>Harry is a freelance designer, developer, writer, speaker and front-end architect from the UK, previously working as Senior UI Developer for Sky. He Tweets at</p>
+            <ul class="speaker-social">
+              <li><a href="#"><span class="ti-facebook"></span></a></li>
+              <li><a href="#"><span class="ti-twitter-alt"></span></a></li>
+              <li><a href="#"><span class="ti-linkedin"></span></a></li>
+            </ul>
+          </div>
+        </div>
+                {% comment %} <section class="pt3 pb3 align--center">
+                    <h3 id="speakers" class="mb1">The Performers</h3>
+                    <div class="grid-row">
+                        <div class="grid-column span-2 mt2">
+                            <img class="mb1" src="{% static 'img/speaker-2.png' %}" alt="Alyssa Long">
+                            <p class="small">Alyssa Long</p>
+                        </div>
+                        <div class="grid-column span-2 mt2">
+                            <img class="mb1" src="{% static 'img/speaker-1.png' %}" alt="Jonathan Foster">
+                            <p class="small">Jonathan Foster</p>
+                        </div>
+                        <div class="grid-column span-2 mt2">
+                            <img class="mb1" src="{% static 'img/speaker-4.png' %}" alt="Kiara Taylor">
+                            <p class="small">Kiara Taylor</p>
+                        </div>
+                        <div class="grid-column span-2 mt2">
+                            <img class="mb1" src="{% static 'img/speaker-3.png' %}" alt="Elijah Rhodes">
+                            <p class="small">Elijah Rhodes</p>
+                        </div>
+                        <div class="grid-column span-2 mt2">
+                            <img class="mb1" src="{% static 'img/speaker-6.png' %}" alt="Anita Gonzalez">
+                            <p class="small">Anita Gonzalez</p>
+                        </div>
+                        <div class="grid-column span-2 mt2">
+                            <img class="mb1" src="{% static 'img/speaker-5.png' %}" alt="Adrian Sosa">
+                            <p class="small">Adrian Sosa</p>
+                        </div>
+                    </div>
+                </section> {% endcomment %}
+
+                <!-- Sponsors -->
+                {% comment %} <section class="pt3 pb3 align--center">
+                    <h3 class="mb2">Some generous peeps</h3>
+                    <img class="m1" src="/img/stripe.svg" alt="Stripe" style="height:50px">
+                    <img class="m1" src="/img/segment.svg" alt="Segment" style="height:45px">
+                    <img class="m1" src="/img/newrelic.svg" alt="New Relic" style="height:35px">
+                    <img class="m1" src="/img/drift.svg" alt="Drift" style="height:50px">
+                    <img class="m1" src="/img/zopim.svg" alt="Zopim" style="height:50px">
+                </section> {% endcomment %}
+
+                <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>document.getElementsByTagName("html")[0].className += " js";</script>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="cd-main-header text-center flex flex-column flex-center">
+
+    <h1 class="text-xl">Schedule</h1>
+  </header>
+
+  <div class="cd-schedule cd-schedule--loading margin-top-lg margin-bottom-lg js-cd-schedule">
+    <div class="cd-schedule__timeline">
+      <ul>
+        <li><span>18:00</span></li>
+        <li><span>18:30</span></li>
+        <li><span>19:00</span></li>
+        <li><span>19:30</span></li>
+        <li><span>20:00</span></li>
+        <li><span>20:30</span></li>
+        <li><span>21:00</span></li>
+        <li><span>21:30</span></li>
+        <li><span>22:00</span></li>
+        <li><span>22:30</span></li>
+        <li><span>23:00</span></li>
+      </ul>
+    </div> <!-- .cd-schedule__timeline -->
+  
+    <div class="cd-schedule__events">
+      <ul>
+        <li class="cd-schedule__group">
+          <div class="cd-schedule__top-info"><span>TY NIGHT</span></div>
+  
+          <ul>
+            <li class="cd-schedule__event" id="by40">
+              <a id="cycolor" data-start="21:30" data-end="23:00" data-content="event-rowing-workout" data-event="event-4" href="#0">
+                <em class="cd-schedule__name">Piano Performance</em>
+              </a>
+            </li>
+  
+            <li class="cd-schedule__event" id='by20'>
+              <a id="piano" data-start="20:00" data-end="21:00" data-content="event-abs-circuit" data-event="event-2" href="#0">
+                <em class="cd-schedule__name">TY Concert</em>
+              </a>
+            </li>
+  
+            <li class="cd-schedule__event">
+              <a id="showcase" data-start="18:00" data-end="19:30"  data-content="event-yoga-1" data-event="event-3" href="#0">
+                <em class="cd-schedule__name">TY Showcase</em>
+              </a>
+            </li>
+          </ul>
+          
+        </li>
+  
+    <div class="cd-schedule__cover-layer"></div>
+  </div> <!-- .cd-schedule -->
+
+  <script src="{% static 'assets/js/util.js' %}"></script> <!-- util functions included in the CodyHouse framework -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+
+</body>
+</html>
+
+<br>
+&nbsp;
+
+                <!-- Testimonials -->
+                <section class="pt2 pb3">
+                    <h3 class="align--center mb2">Event Reviews</h3>
+                    <div class="grid-row">
+                        <div class="grid-column span-one-third mt1">
+                            <blockquote class="blockquote">
+                                <p>Absolutely breathtaking event from the luxurious&nbsp;school.</p>
+                                <p>> <cite>The Times</cite></p>
+                            </blockquote>
+                        </div>
+                        <div class="grid-column span-one-third mt1">
+                            <blockquote class="blockquote">
+                                <p>It takes a really long time to get to this event. Worth it?&nbsp;Maybe.</p>
+                                <p>> <cite>Anonymous</cite></p>
+                            </blockquote>
+                        </div>
+                        <div class="grid-column span-one-third mt1">
+                            <blockquote class="blockquote">
+                                <p>I don't think a better event has been pulled off by this&nbsp;school.</p>
+                                <p>> <cite>Kevin Hart</cite></p>
+                            </blockquote>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CTA -->
+            
+                <section class="align--center pt3 pb3" id="tickets">
+                    <p class="h3 mb2">Tickets start at&nbsp;€10.</p>
+                    <a id="dload" href="" class="btn btn--outline">Download Schedule</a>
+                    <a style="" id="btn" href="https://www.eventbrite.com/e/st-kilians-ty-show-tickets-89592913817" class="btn btn--default mine" target="_blank">Get a ticket →</a>
+                    <p id="by" class="small mt1 text--gray">Tickets available on Eventbrite.</p>
+                </section>
+
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="mt2 pb3 align--center foot" id="footmar">
+            <ul class="no-bullets list--inline mb0">
+                <li class="m1 block-on-mobile tweet"><a href="https://www.twitter.com" class="link mini2 "><img id="tedit" class="icon" src="{% static 'img/twitter.svg' %}" alt="Twitter"><span class="pad4">Twitter</span></a></li>
+                <li class="m1 block-on-mobile tweet"><a href="https://www.facebook.com" class="link mini2 "><img id="fedit"  class="icon" src="{% static 'img/facebook.svg' %}" alt="Facebook"><span class="pad4">Facebook</span></a></li>
+                <li class="m1 block-on-mobile tweet"><a href="https://www.instagram.com" id="ig" class="link mini2 "><img id="iedit"  class="icon" src="{% static 'img/instagram.svg' %}" alt="Instagram"><span class="pad4">Instagram</span></a></li>
+                <li class="m1 block-on-mobile tweet"><a href="https://www.youtube.com" class="link mini"><img id="yedit" class="icon" src="{% static 'img/youtube.svg' %}" alt="YouTube"><span class="pad4">YouTube</span></a></li>
+            </ul>
+            <p id="" class="mt1 small text--gray">Developed by <a href="https://www.linkedin.com/in/vagif-aliyev-88a253190/" class="link" target="_blank">Vagif Aliyev</a>.</p>
+        </footer>
+
+    </div>
+    </div>
+
+    </body>
+              <script src="{% static 'js/jquery.min.js' %}"></script>
+
+                <script src="{% static 'js/jquery.easing.min.js' %}"></script>
+
+
+          <script src="{% static 'js/scrolling-nav.js' %}"></script>
+</html>
+
